@@ -1,0 +1,31 @@
+make project
+  指定フォルダ直下
+    yarn create next-app --typescript . 
+
+styled-components
+  yarn add styled-components
+
+tailwind.css
+  Terminal
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+
+  tailwind.config.js  
+    module.exports = {
+      content: [
+        "./pages/**/*.{js,ts,jsx,tsx}",
+        "./components/**/*.{js,ts,jsx,tsx}",
+      ],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+
+  globals.css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+react-query supabase zustand heroicons
+  yarn add @heroicons/react @supabase/supabase-js react-query zustand
